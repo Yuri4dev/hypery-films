@@ -1,7 +1,33 @@
-# Vue 3 + Vite
+# vuejs-challenge
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Coding challenge for evaluating VueJS candidates at Hypery
 
-## Recommended IDE Setup
+## Description
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+You should develop a project using VueJS to read an [external API](https://developers.themoviedb.org/3/trending/get-trending) and render the movies that are trending on the day or week, you should have the option to select daily or weekly.
+
+## Tasks
+
+- [ ] Config a single route in your app, like /trending;
+- [ ] You must show the movie's image, title, release date (dd/mm/yyyy) and average vote;
+- [ ] Feel free to choose from grid, list, carousel, or whatever display style you like best for displaying the movies.
+- [ ] Create a repository and send us the link
+
+## Requirements
+
+- [ ] Vue 3
+
+## Not required but very much appreciated
+
+- [ ] Live demo (netlify, vercel, etc)
+- [ ] Components library (vuetify, tailwind, etc)
+
+### Tips
+
+- Use [The Movie DB API v3](https://developers.themoviedb.org/3/trending/get-trending)
+- To get a valid token go to [your panel](https://www.themoviedb.org/settings/api) Settings -> API -> API Key (v3 Auth)
+- You'll use the request below to get the trending movies:
+
+```
+ GET https://api.themoviedb.org/3/trending/movie/{week/day}?api_key={YOUR_API_KEY}
+```
